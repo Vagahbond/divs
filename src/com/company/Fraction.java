@@ -1,9 +1,11 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Fraction {
-    private int denominateur;
-    private int numerateur;
-    public  Fraction(int aDen, int aNum)
+    private double denominateur;
+    private double numerateur;
+    public  Fraction(double aDen, double aNum)
     {
         this.denominateur = aDen;
         this.numerateur = aNum;
@@ -24,12 +26,17 @@ public class Fraction {
         return this;
     }
 
-    public Fraction productFraction(Fraction aFrac)
-    {
-
-        this.numerateur = this.numerateur*aFrac.numerateur;
-        this.denominateur = this.denominateur*aFrac.denominateur;
-        return this;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Fraction fraction = (Fraction) o;
+        return denominateur == fraction.denominateur &&
+                numerateur == fraction.numerateur;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(denominateur, numerateur);
+    }
 }
