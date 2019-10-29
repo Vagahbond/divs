@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763a9617-6b78-4ceb-9eae-4cc6d53a6104" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fraction.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572361331269</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mes COUILLES">
+      <created>1572361595824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572361595824</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Monde de merde">
+      <created>1572361655708</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572361655708</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mes COUILLES" />
-    <option name="LAST_COMMIT_MESSAGE" value="mes COUILLES" />
+    <MESSAGE value="Monde de merde" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monde de merde" />
   </component>
 </project>
