@@ -26,16 +26,9 @@ public class Fraction {
 
     public Fraction productFraction(Fraction aFrac)
     {
-        if (this.denominateur == aFrac.denominateur)
-        {
-            this.numerateur+= aFrac.numerateur;
-        }
-        else
-        {
-            this.numerateur = this.numerateur*aFrac.denominateur + aFrac.numerateur*this.denominateur;
-            this.denominateur = this.denominateur*aFrac.denominateur;
-        }
 
+        this.numerateur = this.numerateur*aFrac.numerateur;
+        this.denominateur = this.denominateur*aFrac.denominateur;
         return this;
     }
 
