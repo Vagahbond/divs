@@ -5,13 +5,13 @@ import java.util.Objects;
 public class Fraction {
     private double denominateur;
     private double numerateur;
-    public  Fraction(double aDen, double aNum)
+    private  Fraction(double aDen, double aNum)
     {
         this.denominateur = aDen;
         this.numerateur = aNum;
     }
 
-    public Fraction addFraction(Fraction aFrac)
+    private Fraction addFraction(Fraction aFrac)
     {
         if (this.denominateur == aFrac.denominateur)
         {
@@ -25,6 +25,37 @@ public class Fraction {
 
         return this;
     }
+
+    private Fraction divideFraction(Fraction aFrac)
+    {
+        if (this.denominateur == aFrac.denominateur)
+        {
+            this.numerateur+= aFrac.numerateur;
+        }
+        else
+        {
+            this.numerateur = this.numerateur*aFrac.denominateur + aFrac.numerateur*this.denominateur;
+            this.denominateur = this.denominateur*aFrac.denominateur;
+        }
+
+        return this;
+    }
+
+    private Fraction factorFraction(Fraction aFrac)
+    {
+        if (this.denominateur == aFrac.denominateur)
+        {
+            this.numerateur+= aFrac.numerateur;
+        }
+        else
+        {
+            this.numerateur = this.numerateur*aFrac.denominateur + aFrac.numerateur*this.denominateur;
+            this.denominateur = this.denominateur*aFrac.denominateur;
+        }
+
+        return this;
+    }
+
 
     @Override
     public boolean equals(Object o) {
