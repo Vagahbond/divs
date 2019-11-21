@@ -25,6 +25,7 @@ public class Fraction {
 
         return this;
     }
+    //a toi de jouer é_è
 
     @Override
     public boolean equals(Object o) {
