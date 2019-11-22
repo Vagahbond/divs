@@ -25,7 +25,21 @@ public class Fraction {
 
         return this;
     }
-    //a toi de jouer é_è
+
+  Fraction divideFraction(Fraction aFrac)
+    {
+        this.denominateur *= aFrac.numerateur;
+        this.numerateur *= aFrac.denominateur;
+        return this;
+    }
+
+    Fraction multiplyFraction(Fraction aFrac)
+    {
+        this.denominateur *= aFrac.denominateur;
+        this.numerateur *= aFrac.numerateur;
+        return this;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -39,5 +53,13 @@ public class Fraction {
     @Override
     public int hashCode() {
         return Objects.hash(denominateur, numerateur);
+    }
+
+
+    @Override
+    public String toString()
+    {
+        int gcd = Generic.gcd(this.denominateur, this.numerateur);
+        return String.format( "%d/%d", this.numerateur/gcd, this.denominateur/gcd)  ;
     }
 }

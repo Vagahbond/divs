@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763a9617-6b78-4ceb-9eae-4cc6d53a6104" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Generic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/divs/com/company/Fraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/divs/com/company/Fraction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/divs/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/divs/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
@@ -27,6 +29,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -68,6 +72,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572360892840</updated>
+      <workItem from="1574358896922" duration="56000" />
+      <workItem from="1574375900949" duration="3465000" />
     </task>
     <task id="LOCAL-00001" summary="mes COUILLES">
       <created>1572361331269</created>
@@ -113,6 +119,9 @@
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
