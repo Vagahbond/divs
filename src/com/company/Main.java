@@ -7,6 +7,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 	// write your code here
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Première fraction : ");
         Fraction f1 = promptFraction();
 
@@ -15,13 +16,13 @@ public class Main {
 
         switch (promptOperation()){
             case 1:
-                System.out.println(f1.addFraction(f2));
+                System.out.println(f1.addFraction(f2).toString());
                 break;
             case 2:
-                //System.out.println(f1.divideFraction(f2));
+                System.out.println(f1.divideFraction(f2).toString());
                 break;
             case 3:
-                //System.out.println(f1.multiplyFraction(f2));
+                System.out.println(f1.multiplyFraction(f2).toString());
                 break;
             default:
                 System.out.println("Unexpected situation");
@@ -31,9 +32,9 @@ public class Main {
     }
     private static Fraction promptFraction()
     {
-        int den = scanInt("Denominateur de la fraction : ");
         int num =  scanInt("Numerateur de la fraction : ");
-        return new Fraction(den, num);
+        int den = scanInt("Denominateur de la fraction : ");
+        return new Fraction(den, num );
     }
 
     private static int promptOperation()
@@ -52,7 +53,7 @@ public class Main {
     private static int scanInt(String message)
     {
         int result = 0;
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println(message);
         try
         {

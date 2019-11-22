@@ -36,33 +36,17 @@ public class Fraction {
         return this;
     }
 
-    private Fraction divideFraction(Fraction aFrac)
+  Fraction divideFraction(Fraction aFrac)
     {
-        if (this.denominateur == aFrac.denominateur)
-        {
-            this.numerateur+= aFrac.numerateur;
-        }
-        else
-        {
-            this.numerateur = this.numerateur*aFrac.denominateur + aFrac.numerateur*this.denominateur;
-            this.denominateur = this.denominateur*aFrac.denominateur;
-        }
-
+        this.denominateur *= aFrac.numerateur;
+        this.numerateur *= aFrac.denominateur;
         return this;
     }
 
-    private Fraction factorFraction(Fraction aFrac)
+    Fraction multiplyFraction(Fraction aFrac)
     {
-        if (this.denominateur == aFrac.denominateur)
-        {
-            this.numerateur+= aFrac.numerateur;
-        }
-        else
-        {
-            this.numerateur = this.numerateur*aFrac.denominateur + aFrac.numerateur*this.denominateur;
-            this.denominateur = this.denominateur*aFrac.denominateur;
-        }
-
+        this.denominateur *= aFrac.denominateur;
+        this.numerateur *= aFrac.numerateur;
         return this;
     }
 
@@ -79,5 +63,13 @@ public class Fraction {
     @Override
     public int hashCode() {
         return Objects.hash(denominateur, numerateur);
+    }
+
+
+    @Override
+    public String toString()
+    {
+        int gcd = Generic.gcd(this.denominateur, this.numerateur);
+        return String.format( "%d/%d", this.numerateur/gcd, this.denominateur/gcd)  ;
     }
 }
